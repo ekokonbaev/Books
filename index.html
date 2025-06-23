@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELBOOK - Ваша цифровая библиотека</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <h1>ELBOOK</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#books">Книги</a></li>
+               
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h2>Добро пожаловать в ELBOOK</h2>
+                <p>Ваша цифровая библиотека с тысячами книг</p>
+                
+            </div>
+        </section>
+
+        <section class="featured-books" id="books">
+            <h2>Популярные книги</h2>
+            <div class="books-grid">
+                <!-- Книги будут добавлены через JavaScript -->
+            </div>
+        </section>
+
+        <section class="categories" id="categories">
+            <h2>Категории</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Художественная литература</h3>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Образование</h3>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-flask"></i>
+                    <h3>Наука</h3>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Психология</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="about-container">
+                <h2>О нас</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>ELBOOK - Ваша цифровая библиотека</h3>
+                        <p>Мы создали ELBOOK, чтобы сделать чтение доступным для каждого. Наша платформа предлагает тысячи книг в различных жанрах, от классической литературы до современных бестселлеров.</p>
+                        <div class="about-features">
+                            <div class="feature">
+                                <i class="fas fa-book-reader"></i>
+                                <h4>Удобное чтение</h4>
+                                <p>Читайте книги в любом месте и в любое время</p>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-mobile-alt"></i>
+                                <h4>Доступ с любого устройства</h4>
+                                <p>Синхронизация между всеми вашими устройствами</p>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-download"></i>
+                                <h4>Офлайн доступ</h4>
+                                <p>Скачивайте книги для чтения без интернета</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Библиотека">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="contact-container">
+                <h2>Контакты</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Адрес</h4>
+                                <p>г. Москва, ул. Книжная, 123</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Телефон</h4>
+                                <p>+7 (999) 123-45-67</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@elbook.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Режим работы</h4>
+                                <p>Пн-Пт: 9:00 - 18:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <h3>Напишите нам</h3>
+                        <div class="form-group">
+                            <input type="text" id="name" required>
+                            <label for="name">Ваше имя</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" required></textarea>
+                            <label for="message">Сообщение</label>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span>Отправить</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>О ELBOOK</h3>
+                <p>Ваш надежный источник знаний и развлечений</p>
+            </div>
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p>Email: info@elbook.com</p>
+                <p>Телефон: +7 (999) 123-45-67</p>
+            </div>
+            <div class="footer-section">
+                <h3>Социальные сети</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ELBOOK. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
